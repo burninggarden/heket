@@ -148,7 +148,7 @@ function sequentialOptionalChildren(test) {
 function avoidCatastrophicBacktracking(test) {
 	Heket.disableRegexCaching();
 
-	var XRI = FS.readFileSync('./abnf/xri.abnf', 'utf8');
+	var XRI = FS.readFileSync('./abnf/xri/2.0.abnf', 'utf8');
 
 	var
 		parser = Heket.createParser(XRI),
